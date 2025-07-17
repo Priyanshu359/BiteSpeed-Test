@@ -18,10 +18,12 @@ In the Body tab:
 Select raw and choose JSON.
 
 Enter a valid payload like:
+```
 {
   "email": "test@example.com",
   "phoneNumber": "1234567890"
 }
+```
 Click Send.
 
 🚀 Endpoint
@@ -29,10 +31,12 @@ POST /identify
 Description: Accepts a phone number and/or email and returns the primary contact with all linked contact IDs.
 
 ✅ Request Body (JSON)
+```json
 {
   "email": "test@example.com",
   "phoneNumber": "1234567890"
 }
+```
 You can send either:
 
 Only email
@@ -42,6 +46,7 @@ Only phoneNumber
 Or both
 
 🔁 Sample Response
+```json
 {
   "contact": {
     "primaryContactId": 1,
@@ -50,3 +55,4 @@ Or both
     "secondaryContactIds": [2, 3]
   }
 }
+```
